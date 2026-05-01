@@ -10,3 +10,4 @@ wheels/
 .venv
 
 resources/Keep
+.DS_Store

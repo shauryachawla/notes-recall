@@ -1,7 +1,7 @@
 from data_cleaning.ingestion import fetch_notes
 
 def main():
-    print("Hello from notes-recall!")
+    """Fetch notes from the Keep resource and print the count."""
     notes = fetch_notes('resources/Keep')
     print(f"Fetched {len(notes)} notes.")
 
