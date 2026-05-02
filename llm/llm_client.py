@@ -75,7 +75,7 @@ class LLMClient:
             except Exception:
                 context_str = "\n\n".join([str(c) for c in context])
 
-        system_msg = system or "You are a personal assistant with access to user's notes. Be concise and accurate."
+        system_msg = system or "You are a personal assistant who is researching on the personality and life of a person with access to their notes. Always answer in no less than 150 words."
 
         prompt_tmpl = ChatPromptTemplate.from_messages(
             [
