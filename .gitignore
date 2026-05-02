@@ -4,10 +4,12 @@ __pycache__/
 build/
 dist/
 wheels/
+chroma_db/*
 *.egg-info
-
+*.bin
 # Virtual environments
 .venv
+.env
 
 resources/Keep
 .DS_Store

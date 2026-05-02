@@ -8,8 +8,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 class Note(BaseModel):
     """Represents a note with text, creation date, and archived status."""
     text: str
-    creation_date: int
+    creation_date: int|str
     isArchived: bool
+    embedding: list[float] = None
 
 def fetch_notes(folder_path: str) -> list[Note]:
     """Fetch notes from a directory and return validated Note objects."""
